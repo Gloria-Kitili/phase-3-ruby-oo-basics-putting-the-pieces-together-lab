@@ -1,16 +1,20 @@
 class Book
-    attr_reader :title
-    attr_accessor :author, : page_count, :genre
+    attr_accessor :title, :author, :page_count, :genre
 
-    def intialize (title = "The Monk Who Sold His Ferrari")
+    def initialize(title)
         @title = title
-    end
+      end
 
-    def flip_page 
-     puts "Flipping the page to see the next content!"
+    def turn_page 
+     puts "Flipping the page...wow, you read fast!"
     end
 
 end
-Oranges are not the only fruit = Book.new ("Oranges are not the only fruit ")
+my_book = Book.new("The Great Gatsby")
+my_book.author = "F. Scott Fitzgerald"  
+my_book.page_count = 198
+my_book.genre = "Fiction"
+
+my_book.turn_page 
 
 
